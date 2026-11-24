@@ -2,7 +2,6 @@
 *.pyc
 logs
 .env.*
-__pyca
-che__
+__pycache__
 .env
 .git
