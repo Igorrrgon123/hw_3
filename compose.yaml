@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:${WEB_PORT}:8000"
+    environment:
+      GREETING: "${MSG}"
+    volumes:
+      - sql-data:/data
+volumes:
+  sql-data:
